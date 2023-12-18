@@ -1,0 +1,107 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.navbar-nav li a {
+    color: black;
+}
+
+#blocksImg {
+    width: 482px;
+    height: 519px;
+}
+
+#section1 {
+    background-color: #e6e6ff;
+}
+
+#section5 {
+    background-color: #e6e6ff;
+}
+
+.startStep {
+    border-style: solid;
+    border-color: blue;
+    height: 150px;
+    border-width: 1px;
+}
+
+.startStepId {
+    color: #6248FF;
+    font-weight: 500;
+    size: 15px;
+    line-height: 18px;
+
+}
+
+.startStepTitle {
+    font-weight: bold;
+}
+
+#startStep2 {
+    margin-top:-50px
+}
+
+#startStep4 {
+    margin-top:-50px
+}
+
+.investerName {
+    font-weight: bold;
+}
+
+.investerDescription {
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: solid;
+    border-color: #6248FF;
+    border-width: 2px;
+
+}
+
+.customBorder {
+    border: 2px solid #6248FF;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.991); 
+}
+
+#footerContent > * {
+    color: grey;
+}
+
+#startTradingBtn:hover {
+    background-color: #7181FC !important;
+}
+
+#startTradingBtn:disabled {
+    background-color: #E0E0E0 !important;
+    color: #828282;
+}
+
+#startTradingBtn:active {
+    background-color: #354BF4 !important;
+}
+
+
+  

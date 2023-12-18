@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Front-End Task</title>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaQuery.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Sen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation bar section -->
+    <nav class="navbar navbar-expand-lg bg-white px-5" id="navbarWrapper">
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <a class="navbar-brand fw-bold" id="logoLink" href="#">LOGO</a>
+            <ul class="navbar-nav fw-semibold">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">How it works</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Instructions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accounts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Platforms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>          
+            </ul>
+        </div>      
+        <div id="selectLangWrapper">
+            <select class="m-3 rounded-5 py-1 px-2 fw-semibold" id="selectLang">
+                <option>EN</option>
+                <option>RO</option>
+            </select>
+
+            <button type="button" class="btn btn-primary btn-sm text-nowrap rounded-5 fw-semibold" id="signInForFree">
+                SIGN IN FOR FREE
+            </button>
+
+            <button class="navbar-toggler" id="navbarTogglerBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>         
+    </nav>
+
+    <!-- Start traiding section -->
+    <div class="container-fluid">
+        <div id="section1" class="row p-lg-5 p-md-5 p-3">
+            <div class="col-lg-6">
+                <h1>Trade everywhere. Invest here!</h1>
+                <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere.</p>
+                <button type="button" class="btn btn-primary btn-sm text-nowrap m-3 rounded-5 py-1 px-4 fw-semibold" id="startTradingBtn">START TRADING</button>
+            </div>
+
+            <div class="col-lg-6">
+                <img src="images/blocks.png" alt="blocks" id="blocksImg">
+            </div>
+        </div>
+    </div>
+
+    <!-- Getting started section -->
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-5 col-8">
+                <h1>Getting Started Is Fast & Easy</h1>
+            </div>
+        </div>
+
+        <div class="mt-3 mx-1">
+            <div class="row">
+                <div class="startStep col-md-4 rounded-4">
+                    <span class="startStepId">01.</span><br>
+                    <span class="startStepTitle">Register</span>
+                    <p class="startStepContent">
+                        Complete the simple registration to get your trading credentials.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="startStep col-md-4 offset-md-6 rounded-4" id="startStep2">
+                    <span class="startStepId">02.</span><br>
+                    <span class="startStepTitle">Verification</span>
+                    <p class="startStepContent">
+                        Big Invest is required to verify your identity, upload your documents quickly and get approved in minutes.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="startStep col-md-4 rounded-4" id="startStep3">
+                    <span class="startStepId">03.</span><br>
+                    <span class="startStepTitle">Deposit funds</span>
+                    <p class="startStepContent">
+                        Big Invest accepts credit cards and bank wires. Just use the secure deposit form and follow the steps.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="startStep col-md-4 offset-md-6 rounded-4" id="startStep4">
+                    <span class="startStepId">04.</span><br>
+                    <span class="startStepTitle">Start Trading</span>
+                    <p class="startStepContent">
+                        Once your deposit has been credited, you can begin trading instantly. In no time you will see profits rolling into your account.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Big invest section -->
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-lg-4" id="peopleLoveBigInvest">
+                <h1 id="peopleLoveBigInvestTitle">People love Big Invest</h1>
+               <!-- Left and right controls/icons -->
+               <div id="leftAndRightControls" class="text-lg-start text-md-center text-center">
+                    <button class="btn btn-outline-primary rounded-circle" type="button" data-bs-target="#bigInvestCarousel" data-bs-slide="prev">
+                        &lt;
+                    </button>
+                    <button class="btn btn-outline-primary rounded-circle" type="button" data-bs-target="#bigInvestCarousel" data-bs-slide="next">
+                        &gt;
+                    </button>
+               </div>
+            </div>
+            <div class="col-lg-6 offset-lg-2">
+                <!-- Carousel -->
+                <div id="bigInvestCarousel" class="carousel slide" data-interval="false">
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-lg-2 text-md-center text-center">
+                                    <img src="images/albertAbello.png" alt="albertAbello">
+                                </div>
+                                <div class="col-lg-10 text-md-center text-center">
+                                    <p class="investerName">Albert Abello</p>
+                                    <p>Director of Growth</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1 text-md-center text-center">
+                                    <img src="images/quotes.png" alt="quotes">
+                                </div>
+                                <div class="col-lg-11 text-md-center">
+                                    <p class="investerDescription">This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-2 text-md-center text-center">
+                                    <img src="images/albertAbello.png" alt="albertAbello">
+                                </div>
+                                <div class="col-lg-10 text-md-center text-center">
+                                    <p class="investerName">Smith Brown</p>
+                                    <p>Director of Growth</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1 text-md-center text-center">
+                                    <img src="images/quotes.png" alt="quotes">
+                                </div>
+                                <div class="col-lg-11 text-md-center text-center">
+                                    <p class="investerDescription">This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-2 text-md-center text-center">
+                                    <img src="images/albertAbello.png" alt="albertAbello">
+                                </div>
+                                <div class="col-lg-10 text-md-center text-center">
+                                    <p class="investerName">Williams Evans</p>
+                                    <p>Director of Growth</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1 text-md-center text-center">
+                                    <img src="images/quotes.png" alt="quotes">
+                                </div>
+                                <div class="col-lg-11 text-md-center text-center">
+                                    <p class="investerDescription">This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-lg-2 text-md-center">
+                                    <img src="images/albertAbello.png" alt="albertAbello">
+                                </div>
+                                <div class="col-lg-10 text-md-center">
+                                    <p class="investerName">Jones Davies</p>
+                                    <p>Director of Growth</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-1 text-md-center">
+                                    <img src="images/quotes.png" alt="quotes">
+                                </div>
+                                <div class="col-lg-11 text-md-center">
+                                    <p class="investerDescription">This magical product actually works! It has radically changed the way we build our audiences. Increasing new customer sales by 6x in our most mature market.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Asked questions section -->
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <h1>Frequently asked questions</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="accordion" id="frequentlyAskedQuestions">
+                    <div class="accordion-item rounded-4 my-3 border-2">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            How do I change my details?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#frequentlyAskedQuestions">
+                        <div class="accordion-body">
+                            <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item rounded-4 my-3 border-2">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What platforms will I be able to use?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#frequentlyAskedQuestions">
+                        <div class="accordion-body">
+                            <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item rounded-4 my-3 border-2">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How do I change my details?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#frequentlyAskedQuestions">
+                        <div class="accordion-body">
+                            <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item rounded-4 my-3 border-2">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                              How do I change my details?
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#frequentlyAskedQuestions">
+                          <div class="accordion-body">
+                              <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item rounded-4 my-3 border-2">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                                How do I change my details?
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#frequentlyAskedQuestions">
+                            <div class="accordion-body">
+                                <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item rounded-4 my-3 border-2">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                                How do I change my details?
+                            </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#frequentlyAskedQuestions">
+                            <div class="accordion-body">
+                                <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item rounded-4 my-3 border-2">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseThree">
+                                How do I change my details?
+                            </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#frequentlyAskedQuestions">
+                            <div class="accordion-body">
+                                <p>We provide only the best trading software. The trading terminal MetaTrader4 is the most popular and convenient platform for access to global exchanges. You can work anywhere. All you need is the Internet because the necessary trading tools are already collected in one place and are available in a couple of clicks. Use only the best and develop with us!</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact us section -->
+    <div class="container-fluid">
+        <div id="section5" class="row p-lg-5 p-md-5">
+            <div class="col-lg-6 px-md-5">
+                <h1 class="text-lg-start text-md-center">Contact us!</h1>
+                <p>The support staff and customer service are available to help you with any questions or needs you might have. Just drop us a line.</p>
+                <p>This site is owned and operated by Kode Tech Solutions LTD</p>
+                <p class="fw-bold">Phone:</p>
+                <p>442038857261</p>
+                <p class="fw-bold">Email:</p>
+                <p>help@google.com</p>
+                <p class="fw-bold">Address:</p>
+                <p>Trust Company Complex, Ajeltake Road, Ajeltake Island, Majuro, Republic of the Marshall Islands, MH 96960</p>
+            </div>
+            <div class="col-lg-6 p-lg-5 pb-lg-5 p-md-5 pb-md-5 px-sm-1 text-center customBorder" id="contactUsFormWrapper">
+                <form class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="name" placeholder="Name" required>
+                    </div>
+                
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        <div class="invalid-feedback text-start">Invalid email type</div>
+                    </div>
+                
+                    <div class="mb-3">
+                        <textarea class="form-control" id="mesaj" rows="4" placeholder="Message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary px-5 py-2 rounded-5">Send</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- Down page section -->
+    <div class="container mt-3">
+        <div class="row" id="downPageContent">
+            <div class="col-lg-2 text-md-center text-center" id="downPageLogoWrapper">
+                <a class="navbar-brand fw-bold" id="logoLink" href="#">LOGO</a>
+            </div>
+            <div class="col-lg-4">
+                <h5 class="my-md-3 text-md-center">Information and high risk warning:</h5>
+                <p class="px-md-5">Trading with foreign exchange (FX), contract for differences (CFDs) and precious metals carries a high level of risk that may not be suitable for all investors. Leverage creates additional risk and loss exposure. Before you decide to trade foreign exchange or contract for differences, carefully consider your investment objectives, experience level, and risk tolerance.</p>
+            </div>
+            <div class="col-lg-4">
+                <h5 class="my-md-3 text-md-center">Legal disclaimer:</h5>
+                <p class="px-md-5">Forex trading entails significant risks and is not appropriate for all investors. The possibility of incurring substantial losses should be taken into account. It is therefore important to understand the possible consequences of investing. Traders should weigh their earning potential against the risks involved and act accordingly. Interactive Trade Ltd operating under brand and using domenLink domain within the European Economic Area.</p>
+            </div>
+            <div class="col-lg-2" id="downPageLinks">
+                <h5>About us</h5>
+                <h5>Instructions</h5>
+                <h5>Platforms</h5>
+                <h5>Contact us</h5>
+                <h5>Sign in</h5>
+                <h5>Sign up for free</h5>
+            </div>  
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="text-center py-3">
+        <div class="container" id="footerContent">
+            <span>Copyright 2020, All Right Reserved </span>
+            <span>Terms and Conditions</span>
+            <span>Privacy Policy</span>
+            <span">Risk Warnings</span>
+            <span>Anti-Money Laundering</span>
+        </div>
+    </footer>
+
+    <script src="js/mediaQuery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

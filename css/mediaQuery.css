@@ -1,0 +1,71 @@
+@media screen and (max-width: 320px) {
+    #blocksImg {
+        width: 232px;
+        height: 269px;
+    }
+    #section1 {
+        text-align: center;
+    }
+    #startStep2 { 
+        margin-top: 20px
+    }
+    #startStep4 {
+        margin-top: 20px
+    }
+    #startStep3 {
+        margin-top: 20px
+    }
+    .investerDescription {
+        text-align: center;
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+        margin-top: 15px;
+    }
+    #contactUsFormWrapper {
+        width: 295px !important;
+        margin-left: 10px !important;
+    }
+    #downPageLinks > * {
+        display: block !important;
+        text-align: start;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #section1 {
+        text-align: center;
+    }
+    .startStep {
+        height: 200px;
+    }
+    #peopleLoveBigInvestTitle {
+        width: 250px;
+    }
+    .investerDescription {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    #contactUsFormWrapper {
+        width: 570px;
+        margin-left: 50px;
+    }
+    #downPageLinks {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    #downPageLinks > * {
+        display: inline;
+        margin-right: 16px;
+    }
+    #footerContent > * {
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #footerContent > * {
+        margin-right: 30px;
+    }
+}
